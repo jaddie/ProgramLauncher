@@ -1,0 +1,19 @@
+﻿# Use # at the beginning of a line if you want to add comments to this file
+# If you are entering a filepath which is to be exectued then put it as file:fullfilepathhere
+# Use a new line for each file, do not put more than 1 file on the same line or it will not work.
+# You can also use terminate:processname to kill a process
+# The operations will be processed from the top of the file to teh bottom.
+
+#Close the meh program so the file can be replaced
+terminate:meh
+#Start the meh program up, and also put its working directory underneath.
+file:c:\meh.exe
+workingdir:c:\
+#stop the service dwm (remember to use shortname!)
+stopservice:uxsms
+#start the dwm service
+startservice:uxsms
+#copy the meh.exe file from c:\
+copyfrom:c:\meh.exe
+#copy it to the lol folder
+copyto:c:\lol\meh.exe
